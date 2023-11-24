@@ -4,7 +4,7 @@ const handleErrors = (res) => {
   if (!res.ok) {
     switch(res.status) {
       case 404:
-        throw new Error('Sorry, this page does not exist');
+        throw new Error("Sorry, this page does not exist");
       case 500:
         throw new Error('Sorry, the server encountered an error and could not complete your request.');
       default:
