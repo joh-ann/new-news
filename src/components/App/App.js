@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <AllNewNews />
+      <AllNewNews data={data}/>
     </>
   )
 }

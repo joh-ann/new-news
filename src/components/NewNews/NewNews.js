@@ -1,7 +1,13 @@
-function NewNews() {
+function NewNews({ author, title, description, publishedAt, urlToImage }) {
   return (
     <>
-      <h1>NewNews</h1>
+      <div className='new-news-card'>
+        <img className='' src={urlToImage}/>
+        <h2>{author}</h2>
+        <h2>{title}</h2>
+        <h2>{description}</h2>
+        <h2>{publishedAt}</h2>
+      </div>
     </>
   )
 }
