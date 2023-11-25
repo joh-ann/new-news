@@ -10,6 +10,7 @@ function AllNewNews({ data }) {
         description={article.description}
         publishedAt={article.publishedAt}
         urlToImage={article.urlToImage}
+        index={index}
         key={index}
       />
   ));

@@ -18,7 +18,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<AllNewNews data={data}/>}/>
-        <Route path='/:index' element={<NewNewsDetails data={data}/>}/>
+        <Route path='/news/:index' element={<NewNewsDetails data={data}/>}/>
+        {/* <Route path='/newheights' element={<NewHeightsYouTube />}/> */}
       </Routes>
     </>
   )
