@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<AllNewNews data={data}/>}/>
-        {/* <Route path='/: */}
+        <Route path='/:index' element={<NewNewsDetails data={data}/>}/>
       </Routes>
     </>
   )
