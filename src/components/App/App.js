@@ -3,6 +3,8 @@ import AllNewNews from '../AllNewNews/AllNewNews';
 import { useState, useEffect } from 'react';
 import { fetchSportsData } from '../../apiCalls';
 import mockData from '../../mockData';
+import NewNewsDetails from '../NewNewsDetails/NewNewsDetails';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const [data, setData] = useState(mockData);
@@ -14,7 +16,10 @@ function App() {
   return (
     <>
       <Header />
-      <AllNewNews data={data}/>
+      <Routes>
+        <Route path='/' element={<AllNewNews data={data}/>}/>
+        {/* <Route path='/: */}
+      </Routes>
     </>
   )
 }

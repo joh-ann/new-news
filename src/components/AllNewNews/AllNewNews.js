@@ -1,4 +1,5 @@
 import NewNews from '../NewNews/NewNews';
+import nhBg from '../../images/nh-bg.png';
 
 function AllNewNews({ data }) {
 
@@ -15,7 +16,7 @@ function AllNewNews({ data }) {
 
   return (
     <>
-      <div className='news-list grid grid-cols-4 m-10 gap-5'>
+      <div className='news-list flex flex-col items-center gap-5 p-3 bg-repeat' style={{ backgroundImage: `url(${nhBg})` }}>
         { newsList }
       </div>
     </>
