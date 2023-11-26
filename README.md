@@ -1,23 +1,47 @@
-# new-news
+<div align="center">
 
-News Reader
-You will create a news reader application that pulls articles from the News API.
+<img width="300" alt="New Heights Logo" src="https://github.com/joh-ann/new-news/assets/126308696/076d561d-91d2-4a25-b92d-9d529e335eb5">
 
-Note: this API limits you to 100 requests a day. During development, it behooves you to build using mock data to limit the number of actual requests being made. At the time of demonstration/evaluation, please make sure you are making live requests!
+</div>
 
-Requirements:
-At a minimum, you must show:
+### Overview
+This is a website that displays top sports articles in the US using the [News API](https://newsapi.org/). I'm a big fan of the New Heights podcast so I was inspired to incorporate it with the website. This was a Take-Home assignment to simulate a task that we might receive during an interview process. The goal was to complete the task within 8 hours.
 
-A list of articles (headline, image, description if present, date)
-A “detailed” view for each article (headline, image, date, content, source)
-Articles in the list must link to a detailed article view within your app (linking to the source website does not fulfill this requirement)
-Some sort of search, filter, OR sort
-Beyond the base requirements, include any additional elements you’d like, just be mindful of your time. You don’t need to go overboard, just consider what might be necessary to achieve MVP so that this news feed is easy-to-use, information is clear, and navigation is painless. Put yourself in a user’s shoes and think about what you would need (or want). The app should be usable on desktop, tablet, and mobile devices.
+### Take-Home Requirements
+- A list of articles (headline, image, description if present, date)
+- A “detailed” view for each article (headline, image, date, content, source)
+- Articles in the list must link to a detailed article view within your app (linking to the source website does not fulfill this requirement)
+- Some sort of search, filter, OR sort
 
-Things we’ll be looking for:
-A strong understanding of React JS and Front-End best practices
-Your ability to prioritize for MVP
-An understanding of basic usability practices and standards
-A clear hierarchy of information
-Clean, well thought out code
-Try to limit your total time to around 8 hours on this project. Prioritize what is important to get this feed working and as close to MVP as possible. Please do not attempt to recreate an entire newspaper’s website. We’re interested in seeing your ability to write clean code to solve a problem with an understanding of basic UX. We’re not looking for fancy UI tricks or hacks.
+### Preview
+<img width="1504" alt="Screenshot 2023-11-25 at 17 40 33" src="https://github.com/joh-ann/new-news/assets/126308696/0508c021-7763-4c96-b246-dba4cf22c1b8">
+
+### Tech Stack
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+</br>
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+### Installation
+- Clone it to your local machine: `git clone git@github.com:joh-ann/new-news.git`
+- Navigate to the directory: `cd new-news`
+- Install the dependencies: `npm install`
+- Launch the application: `npm start`
+
+### Goals
+```
+- Display a strong understanding of React JS and Front-End best practices
+- Have the ability to prioritize for MVP
+- Apply basic usability practices and standards
+- Display a  clear hierarchy of information
+- Write clean, well thought out code
+```
+
+### Contributors
+- [Johann Dee](https://linkedin.com//in/johanndee)
