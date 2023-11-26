@@ -5,6 +5,7 @@ import { fetchSportsData } from '../../apiCalls';
 import mockData from '../../mockData';
 import NewNewsDetails from '../NewNewsDetails/NewNewsDetails';
 import { Route, Routes } from 'react-router-dom';
+import NewHeights from '../NewHeights/NewHeights';
 
 function App() {
   const [data, setData] = useState(mockData);
@@ -19,7 +20,6 @@ function App() {
       <Routes>
         <Route path='/' element={<AllNewNews data={data}/>}/>
         <Route path='/news/:index' element={<NewNewsDetails data={data}/>}/>
-        {/* <Route path='/newheights' element={<NewHeightsYouTube />}/> */}
       </Routes>
     </>
   )
