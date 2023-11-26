@@ -13,12 +13,17 @@ function App() {
   useEffect(() => {
   }, []);
 
+  const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', timeZoneName: 'short' };
+    return new Date(dateString).toLocaleString('en-US', options);
+  };
+
   return (
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<AllNewNews data={data}/>}/>
-        <Route path='/news/:index' element={<NewNewsDetails data={data}/>}/>
+        <Route path='/' element={<AllNewNews data={data} formatDate={formatDate}/>}/>
+        <Route path='/news/:index' element={<NewNewsDetails data={data} formatDate={formatDate}/>}/>
       </Routes>
     </>
   )

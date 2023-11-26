@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import nhBg from '../../images/nh-bg.png';
 
-function NewNewsDetails({ data }) {
+function NewNewsDetails({ data, formatDate }) {
   const { index } = useParams();
   let navigate = useNavigate();
   const newsDetails = data[parseInt(index, 10)];
@@ -17,6 +17,7 @@ function NewNewsDetails({ data }) {
   return (
     <div className='flex flex-col items-center bg-repeat' style={{ backgroundImage: `url(${nhBg})`, minHeight: `100vh`, height: `auto` }}>
       <div className='new-news-details relative w-7/12 pt-10'>
+      <p className='flex text-2xl'>{formatDate(newsDetails.publishedAt)}</p>
         <img className='w-full h-auto' src={newsDetails.urlToImage} alt="News Image" />
         <div className='absolute bottom-0 left-0 right-0 w-full'>
           <h2 className='text-3xl font-bold text-center text-white bg-black bg-opacity-50 p-5'>{newsDetails.title}</h2>

@@ -2,7 +2,7 @@ import NewNews from '../NewNews/NewNews';
 import nhBg from '../../images/nh-bg.png';
 import { useState } from 'react';
 
-function AllNewNews({ data }) {
+function AllNewNews({ data, formatDate }) {
   const [sortOption, setSortOption] = useState('');
 
   const sortedData = sortOption === 'New to Old'
@@ -16,7 +16,7 @@ function AllNewNews({ data }) {
         author={article.author}
         title={article.title}
         description={article.description}
-        publishedAt={article.publishedAt}
+        publishedAt={formatDate(article.publishedAt)}
         urlToImage={article.urlToImage}
         index={index}
         key={index}
