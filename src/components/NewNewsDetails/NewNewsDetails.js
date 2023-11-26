@@ -20,7 +20,7 @@ function NewNewsDetails({ data, formatDate }) {
       <p className='flex text-2xl'>{formatDate(newsDetails.publishedAt)}</p>
         <img className='w-full h-auto' src={newsDetails.urlToImage} alt="News Image" />
         <div className='absolute bottom-0 left-0 right-0 w-full'>
-          <h2 className='text-3xl font-bold text-center text-white bg-black bg-opacity-50 p-5'>{newsDetails.title}</h2>
+          <h2 className='font-bold text-center text-white bg-black bg-opacity-50 p-5 text-md sm:text-lg md:text-xl lg:text-3xl'>{newsDetails.title}</h2>
         </div>
       </div>
       <div className='new-news-details-info w-7/12 pb-5'>
