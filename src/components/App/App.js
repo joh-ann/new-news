@@ -7,10 +7,17 @@ import NewNewsDetails from '../NewNewsDetails/NewNewsDetails';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  const [data, setData] = useState(mockData);
+  const [data, setData] = useState([]);
   console.log(data)
 
   useEffect(() => {
+    fetchSportsData()
+    .then((data) => {
+      const filteredData = data.articles.filter((article) => article.urlToImage);
+
+      setData(filteredData);
+    })
+    .catch((error) => console.error('Error in Network Request', error))
   }, []);
 
   const formatDate = (dateString) => {
