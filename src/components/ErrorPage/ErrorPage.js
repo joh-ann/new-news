@@ -1,7 +1,15 @@
 import nhBg from '../../images/nh-bg.png';
 import { Link } from 'react-router-dom';
 
-function ErrorPage() {
+function ErrorPage({ error }) {
+  if (error) {
+    return (
+      <div className='bg-repeat flex justify-center pt-20 text-xl sm:text-2xl' style={{ backgroundImage: `url(${nhBg})`, height: `100vh` }}>
+        {error}
+      </div>
+    )
+  }
+
   return (
     <>
       <div className='bg-repeat flex justify-center pt-20 text-xl sm:text-2xl' style={{ backgroundImage: `url(${nhBg})`, height: `100vh` }}>

@@ -9,22 +9,29 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 
 function App() {
   const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
   console.log(data)
 
   useEffect(() => {
     fetchSportsData()
     .then((data) => {
-      const filteredData = data.articles.filter((article) => article.urlToImage);
-
-      setData(filteredData);
+        const filteredData = data.articles.filter((article) => article.urlToImage);
+        setData(filteredData);
     })
-    .catch((error) => console.error('Error in Network Request', error))
+    .catch((error) => {
+      console.error('Error in Network Request', error);
+      setError(error.message);
+    });
   }, []);
 
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', timeZoneName: 'short' };
     return new Date(dateString).toLocaleString('en-US', options);
   };
+
+  if (error) {
+    return <ErrorPage error={error} />;
+  }
 
   return (
     <>
