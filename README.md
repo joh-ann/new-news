@@ -8,10 +8,13 @@
 This is a website that displays top sports articles in the US using the [News API](https://newsapi.org/). I'm a big fan of the New Heights podcast so I was inspired to incorporate it with the website. This was a Take-Home assignment to simulate a task that we might receive during an interview process. The goal was to complete the task within 8 hours.
 
 ### Take-Home Requirements
+- Create a news reader application that pulls articles from the News API
+- During development, build using mock data to limit the number of network requests made
 - A list of articles (headline, image, description if present, date)
 - A “detailed” view for each article (headline, image, date, content, source)
 - Articles in the list must link to a detailed article view within your app (linking to the source website does not fulfill this requirement)
 - Some sort of search, filter, OR sort
+- After development, make sure you are making live network requests
 
 ### Preview
 <img width="1504" alt="Screenshot 2023-11-25 at 17 40 33" src="https://github.com/joh-ann/new-news/assets/126308696/0508c021-7763-4c96-b246-dba4cf22c1b8">
