@@ -5,7 +5,6 @@ import { fetchSportsData } from '../../apiCalls';
 import mockData from '../../mockData';
 import NewNewsDetails from '../NewNewsDetails/NewNewsDetails';
 import { Route, Routes } from 'react-router-dom';
-import NewHeights from '../NewHeights/NewHeights';
 
 function App() {
   const [data, setData] = useState(mockData);
