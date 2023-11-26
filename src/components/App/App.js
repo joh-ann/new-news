@@ -5,6 +5,7 @@ import { fetchSportsData } from '../../apiCalls';
 import mockData from '../../mockData';
 import NewNewsDetails from '../NewNewsDetails/NewNewsDetails';
 import { Route, Routes } from 'react-router-dom';
+import ErrorPage from '../ErrorPage/ErrorPage';
 
 function App() {
   const [data, setData] = useState([]);
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path='/' element={<AllNewNews data={data} formatDate={formatDate}/>}/>
         <Route path='/news/:index' element={<NewNewsDetails data={data} formatDate={formatDate}/>}/>
+        <Route path='/*' element={<ErrorPage/>}/>
       </Routes>
     </>
   )
