@@ -27,7 +27,7 @@ function AllNewNews({ data, formatDate }) {
   return (
     <>
       <div className='news-list flex flex-col items-center gap-5 p-3 bg-repeat' style={{ backgroundImage: `url(${nhBg})` }}>
-        <div className='sort flex self-end w-1/6'>
+        <div className='sort flex self-end w-full md:w-1/4 lg:w-1/5 xl:w-1/6'>
           <label className='label mr-1 p-1 font-semibold'>Sort By:</label>
           <select className='rounded-xl pl-1 pr-1' onChange={(event) => setSortOption(event.target.value)}>
             <option hidden></option>
