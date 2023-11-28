@@ -5,7 +5,7 @@
 </div>
 
 ### Overview
-This is a website that displays top sports articles in the US using the [News API](https://newsapi.org/). I'm a big fan of the New Heights podcast so I was inspired to incorporate it with the website. This was a Take-Home assignment to simulate a task that we might receive during an interview process. The goal was to complete the task within 8 hours.
+This is a website that displays top sports articles in the US using the [News API](https://newsapi.org/). I'm a big fan of the New Heights podcast so I was inspired to incorporate it for fun. This was a Take-Home assignment to simulate a task that we might receive during an interview process. The goal was to complete the task within 8 hours.
 
 ### Take-Home Requirements
 - Create a news reader application that pulls articles from the News API
@@ -16,8 +16,18 @@ This is a website that displays top sports articles in the US using the [News AP
 - Some sort of search, filter, OR sort
 - After development, make sure you are making live network requests
 
+[Take-Home Presentation](https://joh-ann.notion.site/Take-Home-Presentation-3c8e9893f31d42b293c49e7444c270e1?pvs=4)
+
 ### Preview
-<img width="1504" alt="Screenshot 2023-11-25 at 17 40 33" src="https://github.com/joh-ann/new-news/assets/126308696/0508c021-7763-4c96-b246-dba4cf22c1b8">
+
+<div align="center">
+  
+<img width="1504" alt="All News" src="https://github.com/joh-ann/new-news/assets/126308696/4a0117e1-0047-4f93-8f90-64119d653428">
+<img width="1504" alt="News Details" src="https://github.com/joh-ann/new-news/assets/126308696/e4f11d8f-2897-4533-8739-9c9e4c0758cc">
+
+<img width="250" alt="Mobile" src="https://github.com/joh-ann/new-news/assets/126308696/1530530e-f08e-4e8d-adc7-996ee76d03cb">
+
+</div>
 
 ### Tech Stack
 
