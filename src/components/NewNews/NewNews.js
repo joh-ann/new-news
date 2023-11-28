@@ -16,7 +16,7 @@ function NewNews({ author, title, description, publishedAt, urlToImage, index })
             className='flex text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-center p-2 text-green-900 hover:text-green-700 hover:underline'>{title}
           </Link>
           <h2 className='flex justify-end text-sm sm:text-base md:text-md lg:text-lg font-semibold mr-5 mb-5'>{publishedAt} - {author}</h2>
-          <h2 className='flex justify-center items text-sm sm:text-base md:text-lg lg:text-xl'>{description}</h2>
+          <h2 className='flex justify-center items-center text-sm sm:text-base md:text-lg lg:text-xl'>{description}</h2>
             <div className='flex justify-end mr-2 text-sm sm:text-base md:text-md lg:text-lg mt-2'>
               <Link to={`/news/${index}`} 
                 className='flex items-center text-white bg-green-900 p-2 rounded-xl gap-1 hover:bg-green-700' 
