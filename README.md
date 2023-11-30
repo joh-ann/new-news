@@ -52,7 +52,7 @@ This is a website that displays top sports articles in the US using the [News AP
 - Display a strong understanding of React JS and Front-End best practices
 - Have the ability to prioritize for MVP
 - Apply basic usability practices and standards
-- Display a  clear hierarchy of information
+- Display a clear hierarchy of information
 - Write clean, well thought out code
 ```
 
